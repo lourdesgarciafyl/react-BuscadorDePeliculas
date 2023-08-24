@@ -1,0 +1,48 @@
+{
+    "Search": [
+        {
+            "Title": "Aftersun",
+            "Year": "2022",
+            "imdbID": "tt19770238",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTM3OTU0ZGUtNzYwYy00ODU3LWI3YjgtOWZlODliMmRiMWEzXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_SX300.jpg"
+        },
+        {
+            "Title": "Aftersun",
+            "Year": "2006",
+            "imdbID": "tt0825223",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOGNiMGQ5YjEtYjA4Ny00ZjU1LWFmMmYtZmYzYzI0NjE0ZmIzXkEyXkFqcGdeQXVyNTYwMTg2NTA@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Love Island: Aftersun",
+            "Year": "2017–",
+            "imdbID": "tt10477990",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzJmNzMwMDAtZDYzMS00ZDYwLTg3MmYtMjc3MTMyMjEyY2ZjXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_SX300.jpg"
+        },
+        {
+            "Title": "Celebrity Love Island: Aftersun",
+            "Year": "2005–2006",
+            "imdbID": "tt0461439",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzA0MmE1MGQtZGVjMS00Y2NlLWE2ZjEtNTAzZTA0Y2I1ZTU3XkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Aftersun",
+            "Year": "2022",
+            "imdbID": "tt19512922",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYmNmYzc5ZWUtNmY4MS00ZTgxLTllODEtMzU4OGYxN2M3Yjg0XkEyXkFqcGdeQXVyNjAyNDc5NTM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Love Island: Aftersun",
+            "Year": "2020–",
+            "imdbID": "tt13051444",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTg0NGNkNTgtOWI2OS00YWI1LWIyNzEtNjE4Zjc5MTA2ZWU4XkEyXkFqcGdeQXVyMTIzODgzODAw._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "6",
+    "Response": "True"
+}

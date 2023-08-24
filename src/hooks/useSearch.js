@@ -10,7 +10,11 @@ export function useSearch () {
       isFirstInput.current = search === ''
       return
     }
-    
+    if (search==="") {
+      setError("Debes ingresar una película")
+      return 
+    }
+
     if (search.match(/^\d+$/)) {
         setError('No se puede buscar una película con un número')
         return

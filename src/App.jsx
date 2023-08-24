@@ -1,15 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { Button, Form } from 'react-bootstrap'
-import MovieCard from './components/Movie';
+import { Button, Form} from 'react-bootstrap'
+import { Movies } from './components/Movie';
 import { useMovies } from './hooks/useMovies';
 import { useSearch } from './hooks/useSearch';
 import Loading from './components/Loading';
+import { useState } from 'react';
 
 
 function App() {
+  const [sort, setSort] = useState(false)
   const {search, setSearch , error} = useSearch()
-  const {movies, getMovies, loading} = useMovies({ search })
+  const {movies, getMovies, loading} = useMovies({ search, sort })
 
   const handleChange = (event) => {
     const newSearch = event.target.value
@@ -28,6 +30,9 @@ function App() {
   //   console.log(movieName)
   // }
 
+  const handleSort = () => {
+    setSort(!sort)
+  }
 
   return (
     <>
@@ -38,9 +43,15 @@ function App() {
           <input 
           value={search}
           name="inputName"
-          className='w-50 me-3'
+          className='col-3'
           placeholder='StarWars, Sherk...'
           onChange={handleChange}
+         ></input>
+          <input 
+          type='checkbox'
+          onChange={handleSort}
+          checked={sort}
+          className='col-1 m-1'
          ></input>
           <Button 
           className='w-25' 
@@ -50,8 +61,7 @@ function App() {
       </div>
     </section>
     <section className='my-3 mainSection bg-black px-2'>
-   { loading &&<Loading />}
-    <MovieCard movies={movies}></MovieCard>
+   { loading? (<Loading />) : (<Movies movies={movies}></Movies>)}
     </section>
     </>
   )

@@ -1,7 +1,7 @@
 import { Row, Card } from "react-bootstrap";
 
 const MovieCard = ({ movies }) => {
-    const hasMovies = movies.length > 0
+    const hasMovies = movies?.length > 0
     return (
         <>
         {
@@ -18,7 +18,7 @@ const MovieCard = ({ movies }) => {
                   </Card>
           ))}
         </Row>) : 
-        ( <h4>No se encontraron peliculas con ese título</h4>) 
+        ( <h4 className="mt-2 text-warning text-center display-6">No se encontraron peliculas con ese título <br/> Intenta nuevamente!</h4>) 
       }
         </>
     )

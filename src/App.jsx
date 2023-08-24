@@ -4,11 +4,12 @@ import { Button, Form } from 'react-bootstrap'
 import MovieCard from './components/Movie';
 import { useMovies } from './hooks/useMovies';
 import { useSearch } from './hooks/useSearch';
+import Loading from './components/Loading';
 
 
 function App() {
   const {search, setSearch , error} = useSearch()
-  const {movies, getMovies} = useMovies({ search })
+  const {movies, getMovies, loading} = useMovies({ search })
 
   const handleChange = (event) => {
     const newSearch = event.target.value
@@ -26,6 +27,7 @@ function App() {
   //   const movieName = data.get("inputName")
   //   console.log(movieName)
   // }
+
 
   return (
     <>
@@ -48,6 +50,7 @@ function App() {
       </div>
     </section>
     <section className='my-3 mainSection bg-black px-2'>
+   { loading &&<Loading />}
     <MovieCard movies={movies}></MovieCard>
     </section>
     </>

@@ -21,27 +21,36 @@
   padding: 1px;
   margin: 0px;
 }
-.movies {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- 
-  width: 100%;
-  gap: 32px;
+.dots {
+  width: 3.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.movie {
-  text-align: center;
+.dots div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #fc2f70;
+  animation: fade 0.8s ease-in-out alternate infinite;
 }
 
-.movie h3, .movie p {
-  margin: 0;
+.dots div:nth-of-type(1) {
+  animation-delay: -0.4s;
 }
 
-.movie img {
-  border-radius: 8px;
-  margin-top: 16px;
+.dots div:nth-of-type(2) {
+  animation-delay: -0.2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

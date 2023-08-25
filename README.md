@@ -28,10 +28,7 @@ Primera iteración:
 - **1**-Hacer un fork del repositorio.
 - **2-** Clonar el repositorio en su computadora.
 - **3-** En una terminal, ejecutar el comando `npm install`.
-- **4-** En una terminal, ejecutar el comando `npm run dev` 
-
-## Sitio deployado
-[Buscador de películas]()
+- **4-** Finalmente, ejecutar el comando `npm run dev` 
 
 ## Autora 😎:
 - María Lourdes García

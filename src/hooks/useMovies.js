@@ -1,5 +1,5 @@
 import { serviceMovies } from "../services/movies"
-import { useMemo, useRef, useState } from "react"
+import { useMemo, useRef, useState, useCallback } from "react"
 
 export function useMovies ({ search, sort }) {
     const [movies, setMovies] = useState([])
@@ -7,7 +7,7 @@ export function useMovies ({ search, sort }) {
     const [, setError] = useState(null)
     const prevSearch = useRef(search)
 
-    const getMovies = async () => {
+    const getMovies =  useCallback( async ({ search }) => {
         if (search === prevSearch.current) return
 
         try{
@@ -21,7 +21,7 @@ export function useMovies ({ search, sort }) {
         } finally {
             setLoading(false)
         }
-    }
+    }, [])
 
     const sortedMovies = useMemo(() => {
         return sort

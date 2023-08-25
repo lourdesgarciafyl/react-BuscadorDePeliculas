@@ -21,9 +21,9 @@ function MovieCard({ movies }) {
 
 function NoMovies() {
   return (
-    <h4 className="mt-2 text-warning text-center display-6">
+    <p className="mt-2 text-warning text-center">
       No se encontraron peliculas con ese título <br /> Intenta nuevamente!
-    </h4>
+    </p>
   );
 }
 

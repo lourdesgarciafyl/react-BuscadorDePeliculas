@@ -1,7 +1,5 @@
 # Buscador de películas
-
-Creo una aplicación para buscar películas
-
+Crear una aplicación para buscar películas
 API a usar: - https://www.omdbapi.com/
 
 Requerimientos:
@@ -23,3 +21,17 @@ Primera iteración:
 ✅ Haz que la búsqueda se haga automáticamente al escribir.
 
 ✅ Evita que se haga la búsqueda continuamente al escribir (debounce)
+
+
+## Para poder visualizarlo:
+
+- **1**-Hacer un fork del repositorio.
+- **2-** Clonar el repositorio en su computadora.
+- **3-** En una terminal, ejecutar el comando `npm install`.
+- **4-** En una terminal, ejecutar el comando `npm run dev` 
+
+## Sitio deployado
+[Buscador de películas]()
+
+## Autora 😎:
+- María Lourdes García
